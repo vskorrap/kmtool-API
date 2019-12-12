@@ -1,0 +1,478 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>GOImplementAPI</Name>
+    <RootNamespace>GOImplementAPI</RootNamespace>
+    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{183936ac-fd1d-41f9-a87c-37d286b2e949}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>GOImplementAPI.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="GOImplement\file_app\admin.py" />
+    <Compile Include="GOImplement\file_app\apps.py" />
+    <Compile Include="GOImplement\file_app\migrations\0001_initial.py" />
+    <Compile Include="GOImplement\file_app\migrations\__init__.py" />
+    <Compile Include="GOImplement\file_app\models.py" />
+    <Compile Include="GOImplement\file_app\serializers.py" />
+    <Compile Include="GOImplement\file_app\tests.py" />
+    <Compile Include="GOImplement\file_app\urls.py" />
+    <Compile Include="GOImplement\file_app\views.py" />
+    <Compile Include="GOImplement\file_app\__init__.py" />
+    <Compile Include="GOImplement\GeneralDiscussion\admin.py" />
+    <Compile Include="GOImplement\GeneralDiscussion\apps.py" />
+    <Compile Include="GOImplement\GeneralDiscussion\manage.py" />
+    <Compile Include="GOImplement\GeneralDiscussion\models.py" />
+    <Compile Include="GOImplement\GeneralDiscussion\serializers.py" />
+    <Compile Include="GOImplement\GeneralDiscussion\tests.py" />
+    <Compile Include="GOImplement\GeneralDiscussion\urls.py" />
+    <Compile Include="GOImplement\GeneralDiscussion\views.py" />
+    <Compile Include="GOImplement\GeneralDiscussion\__init__.py" />
+    <Compile Include="GOImplement\GRM\admin.py" />
+    <Compile Include="GOImplement\GRM\AllocationType\serializers.py" />
+    <Compile Include="GOImplement\GRM\AllocationType\urls.py" />
+    <Compile Include="GOImplement\GRM\AllocationType\views.py" />
+    <Compile Include="GOImplement\GRM\apps.py" />
+    <Compile Include="GOImplement\GRM\Countries\serializers.py" />
+    <Compile Include="GOImplement\GRM\Countries\urls.py" />
+    <Compile Include="GOImplement\GRM\Countries\views.py" />
+    <Compile Include="GOImplement\GRM\Customers\serializers.py" />
+    <Compile Include="GOImplement\GRM\Customers\urls.py" />
+    <Compile Include="GOImplement\GRM\Customers\views.py" />
+    <Compile Include="GOImplement\GRM\Disciplines\serializers.py" />
+    <Compile Include="GOImplement\GRM\Disciplines\urls.py" />
+    <Compile Include="GOImplement\GRM\Disciplines\views.py" />
+    <Compile Include="GOImplement\GRM\HexagonRegions\serializers.py" />
+    <Compile Include="GOImplement\GRM\HexagonRegions\urlsRegions.py" />
+    <Compile Include="GOImplement\GRM\HexagonRegions\urlsTeams.py" />
+    <Compile Include="GOImplement\GRM\HexagonRegions\views.py" />
+    <Compile Include="GOImplement\GRM\Locations\serializers.py" />
+    <Compile Include="GOImplement\GRM\Locations\urls.py" />
+    <Compile Include="GOImplement\GRM\Locations\views.py" />
+    <Compile Include="GOImplement\GRM\migrations\0001_initial.py" />
+    <Compile Include="GOImplement\GRM\migrations\0002_auto_20190430_1218.py" />
+    <Compile Include="GOImplement\GRM\migrations\0003_auto_20190430_1246.py" />
+    <Compile Include="GOImplement\GRM\migrations\0004_projects_status.py" />
+    <Compile Include="GOImplement\GRM\migrations\0005_remove_projects_region.py" />
+    <Compile Include="GOImplement\GRM\migrations\0006_auto_20190430_1427.py" />
+    <Compile Include="GOImplement\GRM\migrations\0007_auto_20190430_1708.py" />
+    <Compile Include="GOImplement\GRM\migrations\0008_projects_createddate.py" />
+    <Compile Include="GOImplement\GRM\migrations\0009_auto_20190502_1114.py" />
+    <Compile Include="GOImplement\GRM\migrations\0010_projects_projectmanager.py" />
+    <Compile Include="GOImplement\GRM\migrations\__init__.py" />
+    <Compile Include="GOImplement\GRM\models.py" />
+    <Compile Include="GOImplement\GRM\Planning\serializers.py" />
+    <Compile Include="GOImplement\GRM\Planning\urls.py" />
+    <Compile Include="GOImplement\GRM\Planning\views.py" />
+    <Compile Include="GOImplement\GRM\ProductSkills\serializers.py" />
+    <Compile Include="GOImplement\GRM\ProductSkills\urls.py" />
+    <Compile Include="GOImplement\GRM\ProductSkills\views.py" />
+    <Compile Include="GOImplement\GRM\ProjectDemand\serializers.py" />
+    <Compile Include="GOImplement\GRM\ProjectDemand\urls.py" />
+    <Compile Include="GOImplement\GRM\ProjectDemand\views.py" />
+    <Compile Include="GOImplement\GRM\ProjectManagement\urls.py" />
+    <Compile Include="GOImplement\GRM\ProjectManagement\views.py" />
+    <Compile Include="GOImplement\GRM\ProjectStatusCategoryTypes\serializers.py" />
+    <Compile Include="GOImplement\GRM\ProjectStatusCategoryTypes\urls.py" />
+    <Compile Include="GOImplement\GRM\ProjectStatusCategoryTypes\views.py" />
+    <Compile Include="GOImplement\GRM\ProjectStatusTypes\serializers.py" />
+    <Compile Include="GOImplement\GRM\ProjectStatusTypes\urls.py" />
+    <Compile Include="GOImplement\GRM\ProjectStatusTypes\views.py" />
+    <Compile Include="GOImplement\GRM\Projects\serializers.py" />
+    <Compile Include="GOImplement\GRM\Projects\urls.py" />
+    <Compile Include="GOImplement\GRM\Projects\views.py" />
+    <Compile Include="GOImplement\GRM\ResourceExperience\serializers.py" />
+    <Compile Include="GOImplement\GRM\ResourceExperience\urls.py" />
+    <Compile Include="GOImplement\GRM\ResourceExperience\views.py" />
+    <Compile Include="GOImplement\GRM\ResourceManagement\urls.py" />
+    <Compile Include="GOImplement\GRM\ResourceManagement\views.py" />
+    <Compile Include="GOImplement\GRM\ResourceProductSkills\serializers.py" />
+    <Compile Include="GOImplement\GRM\ResourceProductSkills\urls.py" />
+    <Compile Include="GOImplement\GRM\ResourceProductSkills\views.py" />
+    <Compile Include="GOImplement\GRM\ResourceProjectExperience\serializers.py" />
+    <Compile Include="GOImplement\GRM\ResourceProjectExperience\urls.py" />
+    <Compile Include="GOImplement\GRM\ResourceProjectExperience\views.py" />
+    <Compile Include="GOImplement\GRM\Resources\serializers.py" />
+    <Compile Include="GOImplement\GRM\Resources\urls.py" />
+    <Compile Include="GOImplement\GRM\Resources\views.py" />
+    <Compile Include="GOImplement\GRM\ResourceTechnicalSkill\serializers.py" />
+    <Compile Include="GOImplement\GRM\ResourceTechnicalSkill\urls.py" />
+    <Compile Include="GOImplement\GRM\ResourceTechnicalSkill\views.py" />
+    <Compile Include="GOImplement\GRM\ResourceTraining\serializers.py" />
+    <Compile Include="GOImplement\GRM\ResourceTraining\urls.py" />
+    <Compile Include="GOImplement\GRM\ResourceTraining\views.py" />
+    <Compile Include="GOImplement\GRM\Roles\serializers.py" />
+    <Compile Include="GOImplement\GRM\Roles\urls.py" />
+    <Compile Include="GOImplement\GRM\Roles\views.py" />
+    <Compile Include="GOImplement\GRM\serializers.py" />
+    <Compile Include="GOImplement\GRM\StatusTypes\serializers.py" />
+    <Compile Include="GOImplement\GRM\StatusTypes\urls.py" />
+    <Compile Include="GOImplement\GRM\StatusTypes\views.py" />
+    <Compile Include="GOImplement\GRM\TechnicalGroup\serializers.py" />
+    <Compile Include="GOImplement\GRM\TechnicalGroup\urls.py" />
+    <Compile Include="GOImplement\GRM\TechnicalGroup\views.py" />
+    <Compile Include="GOImplement\GRM\TechnicalSkills\serializers.py" />
+    <Compile Include="GOImplement\GRM\TechnicalSkills\urls.py" />
+    <Compile Include="GOImplement\GRM\TechnicalSkills\views.py" />
+    <Compile Include="GOImplement\GRM\tests.py" />
+    <Compile Include="GOImplement\GRM\urls.py" />
+    <Compile Include="GOImplement\GRM\utils.py" />
+    <Compile Include="GOImplement\GRM\views.py" />
+    <Compile Include="GOImplement\GRM\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="GOImplementAPI\__init__.py" />
+    <Compile Include="GOImplementAPI\settings.py" />
+    <Compile Include="GOImplementAPI\urls.py" />
+    <Compile Include="GOImplementAPI\wsgi.py" />
+    <Compile Include="models.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GOImplement\file_app\migrations\__pycache__\0001_initial.cpython-37.pyc" />
+    <Content Include="GOImplement\file_app\migrations\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\admin.cpython-36.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\admin.cpython-37.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\models.cpython-36.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\models.cpython-37.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="GOImplement\file_app\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\admin.cpython-36.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\admin.cpython-37.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\models.cpython-36.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\models.cpython-37.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="GOImplement\GeneralDiscussion\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\AllocationType\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\AllocationType\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\AllocationType\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\AllocationType\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\AllocationType\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\AllocationType\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Countries\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Countries\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Countries\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Countries\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Countries\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Countries\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Customers\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Customers\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Customers\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Customers\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Customers\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Customers\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Disciplines\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Disciplines\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Disciplines\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Disciplines\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Disciplines\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Disciplines\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\HexagonRegions\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\HexagonRegions\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\HexagonRegions\__pycache__\urlsRegions.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\HexagonRegions\__pycache__\urlsRegions.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\HexagonRegions\__pycache__\urlsTeams.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\HexagonRegions\__pycache__\urlsTeams.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\HexagonRegions\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\HexagonRegions\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Locations\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Locations\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Locations\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Locations\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Locations\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Locations\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0001_initial.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0001_initial.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0002_auto_20190430_1218.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0002_auto_20190430_1218.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0003_auto_20190430_1246.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0003_auto_20190430_1246.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0004_projects_status.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0004_projects_status.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0005_remove_projects_region.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0005_remove_projects_region.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0006_auto_20190430_1427.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0006_auto_20190430_1427.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0007_auto_20190430_1708.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0007_auto_20190430_1708.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0008_projects_createddate.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0008_projects_createddate.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0009_auto_20190502_1114.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0009_auto_20190502_1114.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0010_projects_projectmanager.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\0010_projects_projectmanager.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\migrations\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Planning\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Planning\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Planning\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Planning\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Planning\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Planning\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProductSkills\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProductSkills\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProductSkills\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProductSkills\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProductSkills\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProductSkills\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectDemand\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectDemand\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectDemand\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectDemand\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectDemand\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectDemand\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectManagement\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectManagement\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectManagement\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectManagement\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusCategoryTypes\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusCategoryTypes\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusCategoryTypes\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusCategoryTypes\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusCategoryTypes\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusCategoryTypes\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusTypes\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusTypes\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusTypes\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusTypes\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusTypes\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ProjectStatusTypes\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Projects\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Projects\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Projects\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Projects\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Projects\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Projects\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceExperience\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceExperience\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceExperience\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceExperience\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceExperience\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceExperience\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceManagement\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceManagement\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceManagement\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceManagement\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProductSkills\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProductSkills\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProductSkills\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProductSkills\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProductSkills\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProductSkills\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProjectExperience\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProjectExperience\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProjectExperience\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProjectExperience\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProjectExperience\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceProjectExperience\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Resources\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Resources\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Resources\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Resources\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Resources\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Resources\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTechnicalSkill\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTechnicalSkill\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTechnicalSkill\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTechnicalSkill\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTechnicalSkill\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTechnicalSkill\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTraining\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTraining\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTraining\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTraining\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTraining\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\ResourceTraining\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Roles\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Roles\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Roles\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Roles\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\Roles\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\Roles\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\StatusTypes\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\StatusTypes\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\StatusTypes\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\StatusTypes\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\StatusTypes\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\StatusTypes\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalGroup\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalGroup\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalGroup\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalGroup\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalGroup\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalGroup\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalSkills\__pycache__\serializers.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalSkills\__pycache__\serializers.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalSkills\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalSkills\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalSkills\__pycache__\views.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\TechnicalSkills\__pycache__\views.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\__pycache__\admin.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\__pycache__\admin.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\__pycache__\models.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\__pycache__\models.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\__pycache__\urls.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\__pycache__\urls.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\__pycache__\utils.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\__pycache__\utils.cpython-37.pyc" />
+    <Content Include="GOImplement\GRM\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="GOImplement\GRM\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="GOImplement\media\CUS_ADVREMIAD_SPCloud_CloudAdvantage_Proposal_Template_-_Copy.docx" />
+    <Content Include="GOImplement\media\CUS_ADVRE_ISCloud_3xEAdvantage_SoW_Template.docx" />
+    <Content Include="GOImplement\media\Data_Historian_Market.pdf" />
+    <Content Include="GOImplement\media\GO_Implement_-_DesignSpecs.docx" />
+    <Content Include="GOImplement\media\GO_Implement_-_DesignSpecs_Fgp0kRe.docx" />
+    <Content Include="GOImplement\media\Go_Implement_User_workflow_Document.docx" />
+    <Content Include="GOImplement\media\INT-SAP-MAT.PDF" />
+    <Content Include="GOImplement\media\JAva_Training.pdf" />
+    <Content Include="GOImplement\media\SOW.pdf" />
+    <Content Include="GOImplement\media\SPF_Setup_Guide.docx" />
+    <Content Include="GOImplement\media\Steps_For_installing_SQL_2008.doc" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GOImplementAPI\" />
+    <Folder Include="GOImplement\" />
+    <Folder Include="GOImplement\file_app\" />
+    <Folder Include="GOImplement\file_app\migrations\" />
+    <Folder Include="GOImplement\file_app\migrations\__pycache__\" />
+    <Folder Include="GOImplement\file_app\__pycache__\" />
+    <Folder Include="GOImplement\GeneralDiscussion\" />
+    <Folder Include="GOImplement\GeneralDiscussion\__pycache__\" />
+    <Folder Include="GOImplement\GRM\" />
+    <Folder Include="GOImplement\GRM\AllocationType\" />
+    <Folder Include="GOImplement\GRM\AllocationType\__pycache__\" />
+    <Folder Include="GOImplement\GRM\Countries\" />
+    <Folder Include="GOImplement\GRM\Countries\__pycache__\" />
+    <Folder Include="GOImplement\GRM\Customers\" />
+    <Folder Include="GOImplement\GRM\Customers\__pycache__\" />
+    <Folder Include="GOImplement\GRM\Disciplines\" />
+    <Folder Include="GOImplement\GRM\Disciplines\__pycache__\" />
+    <Folder Include="GOImplement\GRM\HexagonRegions\" />
+    <Folder Include="GOImplement\GRM\HexagonRegions\__pycache__\" />
+    <Folder Include="GOImplement\GRM\Locations\" />
+    <Folder Include="GOImplement\GRM\Locations\__pycache__\" />
+    <Folder Include="GOImplement\GRM\migrations\" />
+    <Folder Include="GOImplement\GRM\migrations\__pycache__\" />
+    <Folder Include="GOImplement\GRM\Planning\" />
+    <Folder Include="GOImplement\GRM\Planning\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ProductSkills\" />
+    <Folder Include="GOImplement\GRM\ProductSkills\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ProjectDemand\" />
+    <Folder Include="GOImplement\GRM\ProjectDemand\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ProjectManagement\" />
+    <Folder Include="GOImplement\GRM\ProjectManagement\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ProjectStatusCategoryTypes\" />
+    <Folder Include="GOImplement\GRM\ProjectStatusCategoryTypes\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ProjectStatusTypes\" />
+    <Folder Include="GOImplement\GRM\ProjectStatusTypes\__pycache__\" />
+    <Folder Include="GOImplement\GRM\Projects\" />
+    <Folder Include="GOImplement\GRM\Projects\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ResourceExperience\" />
+    <Folder Include="GOImplement\GRM\ResourceExperience\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ResourceManagement\" />
+    <Folder Include="GOImplement\GRM\ResourceManagement\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ResourceProductSkills\" />
+    <Folder Include="GOImplement\GRM\ResourceProductSkills\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ResourceProjectExperience\" />
+    <Folder Include="GOImplement\GRM\ResourceProjectExperience\__pycache__\" />
+    <Folder Include="GOImplement\GRM\Resources\" />
+    <Folder Include="GOImplement\GRM\Resources\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ResourceTechnicalSkill\" />
+    <Folder Include="GOImplement\GRM\ResourceTechnicalSkill\__pycache__\" />
+    <Folder Include="GOImplement\GRM\ResourceTraining\" />
+    <Folder Include="GOImplement\GRM\ResourceTraining\__pycache__\" />
+    <Folder Include="GOImplement\GRM\Roles\" />
+    <Folder Include="GOImplement\GRM\Roles\__pycache__\" />
+    <Folder Include="GOImplement\GRM\StatusTypes\" />
+    <Folder Include="GOImplement\GRM\StatusTypes\__pycache__\" />
+    <Folder Include="GOImplement\GRM\TechnicalGroup\" />
+    <Folder Include="GOImplement\GRM\TechnicalGroup\__pycache__\" />
+    <Folder Include="GOImplement\GRM\TechnicalSkills\" />
+    <Folder Include="GOImplement\GRM\TechnicalSkills\__pycache__\" />
+    <Folder Include="GOImplement\GRM\__pycache__\" />
+    <Folder Include="GOImplement\media\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env1\">
+      <Id>env1</Id>
+      <Version>3.7</Version>
+      <Description>env1 (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

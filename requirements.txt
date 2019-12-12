@@ -1,0 +1,11 @@
+django ==2.1.13
+djangorestframework
+django-cors-headers
+requests
+django-elasticsearch-dsl
+pyodbc
+django-pyodbc
+django-mssql
+django-mssql-backend
+sql_server.pyodbc
+django-pyodbc-azure

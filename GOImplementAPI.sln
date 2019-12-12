@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "GOImplementAPI", "GOImplementAPI.pyproj", "{183936AC-FD1D-41F9-A87C-37D286B2E949}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{183936AC-FD1D-41F9-A87C-37D286B2E949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183936AC-FD1D-41F9-A87C-37D286B2E949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183936AC-FD1D-41F9-A87C-37D286B2E949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183936AC-FD1D-41F9-A87C-37D286B2E949}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0AF06A3-6052-4795-ACD3-4DD5769E20AB}
+	EndGlobalSection
+EndGlobal
